@@ -1,0 +1,49 @@
+#########################
+##########SQL############
+#########################
+
+create database entities;
+
+
+CREATE TABLE users(
+	ID int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	name varchar(255),
+	address varchar(255),
+	country varchar(255),
+	date DATE
+	);
+	
+CREATE TABLE orders(
+	ID int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	item varchar(255),
+	quantity integer(24),
+	date DATE
+	);
+
+#verification
+select count(*) from orders;
+select count(*) from users;
+
+#########################
+#########MONGO###########
+#########################
+
+#create database
+use user_comments
+
+#verification ( "comments" collection gets created automaticallly)
+db.comments.count()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
